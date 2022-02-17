@@ -1,4 +1,4 @@
-{% comment %}
+?{% comment %}
 Astronomy workshops
 {% endcomment %}
 
@@ -21,7 +21,8 @@ Ecology workshops
 {% if site.flavor == "r" %}
 ### R and RStudio
 
-* Be sure to have R (4.1 or greater) and Rstudio (1.4 or greater). R and RStudio are separate downloads and installations. R is the
+* Be sure to have R (<em>4.1 or greater</em>) and Rstudio (<em>1.4 or greater</em>). <em>R and RStudio are separate 
+  downloads and installations.</em> R is the
 underlying statistical computing environment, but using R alone is no
 fun. RStudio is a graphical integrated development environment (IDE) that makes
 using R much easier and more interactive. You need to install R before you
@@ -124,7 +125,7 @@ your operating system, and then follow the instructions to install
 
 * After installing R and RStudio, you need to install the `tidyverse` and
 `RSQLite` packages. Start RStudio by double-clicking the icon and then type:
-  `install.packages(c("tidyverse", "RSQLite"))`. You can also do this by going to Tools -> Install Packages and 
+  `install.packages("tidyverse", dependencies = TRUE)`. You can also do this by going to Tools -> Install Packages and 
   typing the names of the packages you want to install, separated by a comma.
   
 ## Download the data
